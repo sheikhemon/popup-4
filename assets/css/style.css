@@ -290,7 +290,7 @@ body {
 @media (min-width: 1025px) and (max-width: 1369px) {
     .main-wrapper {
         background-color: black;
-        font-size: 13px;
+        font-size: 15px;
     }
     /* popup main */
     .popup-main {
@@ -299,12 +299,12 @@ body {
     }
     /* Popup Content */
     .popup-left img {
-        height: 64vh;
+        height: 62.5vh;
     }
     /* Popup Right */
     .popup-content .count-popup {
         padding-top: .4em;
-        padding-left: 5.5em;
+        padding-left: 5em;
         padding-bottom: 6em;
     }
     .popup-content .count-popup .single-time {
