@@ -16,51 +16,48 @@
 
 <body>
     <!-- Main Area Start -->
-    <main class="mainWrapper">
+    <main class="main-wrapper">
         <!-- Popup Main -->
-        <div class="popup_main">
+        <div class="popup-main">
+            <!-- close -->
+            <div class="close" onclick="closeBtn()">&times;</div>
             <!-- Popup Content Main-->
-            <div class="popup_content_main">
+            <div class="popup-content-main">
                 <!-- Popup Content -->
-                <div class="popup_content">
+                <div class="popup-content">
                     <!-- popup left -->
-                    <div class="popup_left">
-                        <img src="" alt="">
+                    <div class="popup-left">
+                        <img src="assets/img/popup-brand.png" alt="">
                     </div>
                     <!-- Popup Right -->
-                    <div class="popup_right">
-                        <!-- Popup Offer Time -->
-                        <div class="offer_popup">
-                            <!-- Single Offer Time -->
-                            <div class="single_offer">
-                                <span></span>
-                                <span></span>
-                                <p></p>
+                    <div class="popup-right">
+                        <!-- Time Area -->
+                        <div class="count-popup">
+                            <div class="single-time">
+                                <span>0</span>
+                                <span>6</span>
+                                <p>Hours</p>
                             </div>
-                            <!-- Single Offer Time -->
-                            <div class="single_offer">
-                                <span></span>
-                                <span></span>
-                                <p></p>
+                            <div class="single-time">
+                                <span>2</span>
+                                <span>0</span>
+                                <p>Minutes</p>
                             </div>
-                            <!-- Single Offer Time -->
-                            <div class="single_offer">
-                                <span></span>
-                                <span></span>
-                                <p></p>
+                            <div class="single-time">
+                                <span>4</span>
+                                <span>8</span>
+                                <p>Second</p>
                             </div>
                         </div>
                         <!-- Popup Content Text -->
-                        <div class="popup_text">
-                            <h1></h1>
-                            <p></p>
+                        <div class="popup-text">
+                            <h1>GET EXCITING OFFERS THIS <span>WEEK!</span></h1>
+                            <p>Get your favorite all Items <br> in one place</p>
                         </div>
                         <!-- Popup Button -->
-                        <div class="link_area">
-                            <div class="dashed-1"></div>
-                            <div class="dashed-2"></div>
-                            <a class="jomphaa_btn" href="#">JOM12358469</a>
-                            <a class="shop_btn" href="#">GO TO SHOP</a>
+                        <div class="link-area">
+                            <a class="jomphaa-btn" href="#">JOM12358469</a>
+                            <a class="shop-btn" href="#">GO TO SHOP</a>
                         </div>
                     </div>
                 </div>
@@ -68,6 +65,13 @@
         </div>
     </main>
     <!-- Main Area End -->
+    <!-- JS Custom Script-->
+    <script>
+        function closeBtn() {
+            document.querySelector('.main-wrapper').style.display = "none";
+            document.querySelector('.close').style.display = "none";
+        }
+    </script>
 </body>
 
 </html>

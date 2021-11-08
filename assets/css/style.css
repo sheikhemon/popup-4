@@ -1,4 +1,4 @@
-*, ::before, ::after {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,6 +9,259 @@ body {
     overflow-x: hidden;
 }
 
-.mainWrapper {
+.main-wrapper {
     font-size: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* popup main */
+
+.popup-main {
+    position: relative;
+    width: 32em;
+    height: 90vh;
+    background-image: url("../img/main-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Popup Content main */
+
+.popup-content-main {
+    background-image: url("../img/popup-light.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 33vh;
+}
+
+/* Popup Content */
+
+.popup-content {
+    display: flex;
+    padding: 1.8em 1.5em;
+}
+
+/* Popup Right */
+
+.popup-content .count-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .4em;
+    padding-left: 6em;
+    padding-bottom: 4.7em;
+}
+
+.popup-content .count-popup .single-time {
+    margin-right: .7em;
+}
+
+.popup-content .count-popup .single-time:last-child {
+    margin-right: 0em;
+}
+
+.popup-content .count-popup .single-time span {
+    background-color: #F4F4F4;
+    color: #979797;
+    font-size: 1.23em;
+    font-weight: 300;
+    line-height: 1em;
+    padding: 0 .2em;
+    margin-right: .05em;
+}
+
+.popup-content .popup-right .count-popup .single-time p {
+    text-align: center;
+    color: #000000;
+    font-size: .4em;
+    font-weight: 600;
+    line-height: 1.5em;
+    padding-top: .5em;
+}
+
+/* Pop Text */
+
+.popup-right .popup-text h1 {
+    width: 2.9em;
+    color: #BCBAD0;
+    font-weight: 700;
+    font-size: 2.4em;
+    line-height: 1.1em;
+    padding-left: .9em;
+    padding-bottom: .2em;
+    transition: all .2s linear;
+}
+
+.popup-right .popup-text h1:hover {
+    color: #4F80FF;
+}
+
+.popup-right .popup-text span {
+    color: #000000;
+}
+
+.popup-right .popup-text p {
+    color: #848484;
+    font-weight: 400;
+    font-size: .6em;
+    line-height: 1em;
+    padding-left: 4em;
+    padding-bottom: 3.6em;
+    transition: all .2s linear;
+}
+
+.popup-right .popup-text p:hover {
+    color: #4F80FF;
+}
+
+/*  Button Area Start */
+
+.link-area {
+    padding-left: 2.5em;
+}
+
+.link-area .jomphaa-btn, .shop-btn {
+    text-decoration: none;
+    padding: .8em 1.5em;
+    letter-spacing: .12em;
+    font-size: .55em;
+    line-height: 1.273em;
+}
+
+/* Jomphaa Button */
+
+.jomphaa-btn {
+    background: rgb(114, 102, 185);
+    background: linear-gradient(to right, #2EF2F2 0%, #28D2FD 80%);
+    color: #000000;
+    font-weight: 600;
+    margin-right: 0.7em;
+    position: relative;
+}
+
+/* Shop Button */
+
+.shop-btn {
+    background-color: #E3E5F2;
+    color: #000000;
+    font-weight: 700;
+}
+
+.link-area .jomphaa-btn::before {
+    content: '';
+    position: absolute;
+    top: -3.7px;
+    left: -4.6px;
+    border: .21em dashed #7094F6;
+    opacity: .5;
+    width: 104%;
+    height: 110%;
+}
+
+.popup-main .close {
+    z-index: 99999;
+    color: rgb(14, 1, 1);
+    background: rgb(114, 102, 185);
+    background: linear-gradient(to right, #2EF2F2 0%, #28D2FD 80%);
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+}
+
+/* Media Query for Mobile Devices */
+
+@media screen and (max-width: 667px) {
+    .main-wrapper {
+        font-size: 10px;
+    }
+    .popup-main {
+        position: relative;
+        width: 32em;
+        height: 70vh;
+    }
+    .popup-content {
+        flex-direction: column;
+    }
+    .popup-content img {
+        text-align: center;
+        margin-left: 8em;
+        height: 30vh;
+        width: 20vh;
+    }
+    .popup-content .count-popup {
+        padding-top: 2em;
+        padding-left: 0em;
+        padding-bottom: 2em;
+    }
+    .popup-right .popup-text h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 2.4em;
+        line-height: 1.2em;
+        padding-left: 0em;
+    }
+    .popup-right .popup-text p {
+        text-align: center;
+        font-size: .9em;
+        padding-left: 0em;
+        padding-bottom: 3.7em;
+    }
+    .link-area {
+        text-align: center;
+        padding-left: 0em;
+    }
+    .link-area .jomphaa-btn::before {
+        content: '';
+        position: absolute;
+        top: -1.9px;
+        left: -2.8px;
+        border: .21em dashed #7094F6;
+        opacity: .5;
+        width: 104%;
+        height: 110%;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+
+@media (min-width: 668px) and (max-width: 1024px) {
+    .main-wrapper {
+        font-size: 20px;
+    }
+}
+
+/* Media Query for Laptops and Desktops */
+
+@media (min-width: 1025px) and (max-width: 1369px) {
+    .main-wrapper {
+        font-size: 20px;
+    }
+}
+
+/* Media Query for Large screens */
+
+@media (min-width: 1281px) {
+    .main-wrapper {
+        font-size: 20px;
+    }
+}
+
+/* Media Query for Large screens */
+
+@media (min-width: 1370px) and (max-width: 1920px) {
+    .main-wrapper {
+        font-size: 20px;
+    }
 }
