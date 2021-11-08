@@ -343,16 +343,18 @@ body {
 
 /* Media Query for Large screens */
 
-@media (min-width: 1370px) and (max-width: 1920px) {
+@media (min-width: 1400px) and (max-width: 1920px) {
     .main-wrapper {
-        font-size: 16px;
+        background-color: #000000;
+        font-size: 22px;
         height: 100vh;
     }
     /* popup main */
     .popup-main {
         position: relative;
         width: 32em;
-        height: 70vh;
+        height: 73vh;
+        background-color: #ffffff;
         background-image: url("../img/main-bg.png");
         background-position: center;
         background-size: cover;
@@ -372,7 +374,7 @@ body {
         padding: 1.8em 1.5em;
     }
     .popup-left img {
-        height: 61.5vh;
+        height: 64.7vh;
     }
     /* Popup Right */
     .popup-content .count-popup {
@@ -380,8 +382,8 @@ body {
         justify-content: center;
         align-items: center;
         padding-top: .4em;
-        padding-left: 6em;
-        padding-bottom: 8em;
+        padding-left: 5em;
+        padding-bottom: 6em;
     }
     .popup-content .count-popup .single-time {
         margin-right: .7em;
