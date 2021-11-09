@@ -195,21 +195,22 @@ body {
         background-color: #ffffff;
         position: relative;
         width: 32em;
-        height: 70vh;
+        height: 52vh;
     }
     .popup-content {
         flex-direction: column;
     }
     .popup-content img {
         text-align: center;
-        margin-left: 8em;
-        height: 30vh;
-        width: 20vh;
+        margin-left: 8.5em;
+        margin-top: 1em;
+        height: 25vh;
+        width: 15vh;
     }
     .popup-content .count-popup {
-        padding-top: 2em;
+        padding-top: 1em;
         padding-left: 0em;
-        padding-bottom: 2em;
+        padding-bottom: 1em;
     }
     .popup-right .popup-text h1 {
         width: 100%;
@@ -222,7 +223,7 @@ body {
         text-align: center;
         font-size: .9em;
         padding-left: 0em;
-        padding-bottom: 2.5em;
+        padding-bottom: 2em;
     }
     .link-area {
         text-align: center;
