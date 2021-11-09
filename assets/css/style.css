@@ -188,24 +188,24 @@ body {
 
 @media screen and (max-width: 667px) {
     .main-wrapper {
-        font-size: 10px;
+        font-size: 9px;
         background-color: black;
     }
     .popup-main {
         background-color: #ffffff;
         position: relative;
         width: 32em;
-        height: 53.5vh;
+        height: 48vh;
     }
     .popup-content {
         flex-direction: column;
     }
     .popup-content img {
         text-align: center;
-        margin-left: 8.5em;
+        margin-left: 9.8em;
         margin-top: 1em;
-        height: 25vh;
-        width: 15vh;
+        height: 160px;
+        /* width: 160; */
     }
     .popup-content .count-popup {
         padding-top: 1em;
