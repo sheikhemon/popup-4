@@ -10,7 +10,8 @@ body {
 }
 
 .main-wrapper {
-    font-size: 16px;
+    background-color: #000000;
+    font-size: 24px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -20,6 +21,7 @@ body {
 /* popup main */
 
 .popup-main {
+    background-color: #ffffff;
     position: relative;
     width: 32em;
     height: 70vh;
@@ -57,8 +59,8 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: .4em;
-    padding-left: 6em;
-    padding-bottom: 8em;
+    padding-left: 5em;
+    padding-bottom: 6.4em;
 }
 
 .popup-content .count-popup .single-time {
@@ -159,8 +161,8 @@ body {
 .link-area .jomphaa-btn::before {
     content: '';
     position: absolute;
-    top: -3.7px;
-    left: -4.6px;
+    top: -5.2px;
+    left: -5.7px;
     border: .21em dashed #7094F6;
     opacity: .5;
     width: 104%;
@@ -342,13 +344,12 @@ body {
 
 /* Media Query for Large screens */
 
-@media (min-width: 1400px) and (max-width: 2400px) {
+/* @media (min-width: 1400px) and (max-width: 2400px) {
     .main-wrapper {
         background-color: #000000;
         font-size: 25.5px;
         height: 100vh;
     }
-    /* popup main */
     .popup-main {
         position: relative;
         width: 32em;
@@ -359,7 +360,6 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
     }
-    /* Popup Content main */
     .popup-content-main {
         background-image: url("../img/popup-light.png");
         background-position: center;
@@ -367,7 +367,6 @@ body {
         background-repeat: no-repeat;
         height: 30vh;
     }
-    /* Popup Content */
     .popup-content {
         display: flex;
         padding: 1.8em 1.5em;
@@ -375,7 +374,6 @@ body {
     .popup-left img {
         height: 64.7vh;
     }
-    /* Popup Right */
     .popup-content .count-popup {
         display: flex;
         justify-content: center;
@@ -407,7 +405,6 @@ body {
         line-height: 1.5em;
         padding-top: .5em;
     }
-    /* Pop Text */
     .popup-right .popup-text h1 {
         width: 2.9em;
         color: #BCBAD0;
@@ -436,7 +433,6 @@ body {
     .popup-right .popup-text p:hover {
         color: #4F80FF;
     }
-    /*  Button Area Start */
     .link-area {
         padding-left: 2.5em;
     }
@@ -447,7 +443,6 @@ body {
         font-size: .55em;
         line-height: 1.273em;
     }
-    /* Jomphaa Button */
     .jomphaa-btn {
         background: rgb(114, 102, 185);
         background: linear-gradient(to right, #2EF2F2 0%, #28D2FD 80%);
@@ -456,7 +451,6 @@ body {
         margin-right: 0.7em;
         position: relative;
     }
-    /* Shop Button */
     .shop-btn {
         background-color: #E3E5F2;
         color: #000000;
@@ -472,4 +466,4 @@ body {
         width: 104%;
         height: 110%;
     }
-}
+} */
