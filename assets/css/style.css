@@ -11,7 +11,7 @@ body {
 
 .main-wrapper {
     background-color: #000000;
-    font-size: 24px;
+    font-size: 18.5px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -96,7 +96,7 @@ body {
     width: 2.9em;
     color: #BCBAD0;
     font-weight: 700;
-    font-size: 2.4em;
+    font-size: 2em;
     line-height: 1.1em;
     padding-left: .9em;
     padding-bottom: .2em;
@@ -161,8 +161,8 @@ body {
 .link-area .jomphaa-btn::before {
     content: '';
     position: absolute;
-    top: -5.2px;
-    left: -5.7px;
+    top: -3.8px;
+    left: -4.4px;
     border: .21em dashed #7094F6;
     opacity: .5;
     width: 104%;
@@ -186,18 +186,32 @@ body {
     cursor: pointer;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 410px) {
+    .main-wrapper {
+        font-size: 5.5px !important;
+    }
+    .popup-content img {
+        margin-left: 7.5em !important;
+        height: 150px !important;
+    }
+    .link-area .jomphaa-btn::before {
+        top: -1.2px !important;
+        left: -1.5px !important;
+    }
+}
+
 /* Media Query for Mobile Devices */
 
 @media screen and (max-width: 667px) {
     .main-wrapper {
-        font-size: 9px;
+        font-size: 7.2px;
         background-color: black;
     }
     .popup-main {
         background-color: #ffffff;
         position: relative;
         width: 32em;
-        height: 48vh;
+        height: 42vh;
     }
     .popup-content {
         flex-direction: column;
@@ -207,7 +221,6 @@ body {
         margin-left: 9.8em;
         margin-top: 1em;
         height: 160px;
-        /* width: 160; */
     }
     .popup-content .count-popup {
         padding-top: 1em;
@@ -234,12 +247,12 @@ body {
     .link-area .jomphaa-btn::before {
         content: '';
         position: absolute;
-        top: -1.9px;
-        left: -2.8px;
+        top: -1.65px;
+        left: -1.6px;
         border: .21em dashed #7094F6;
         opacity: .5;
         width: 104%;
-        height: 110%;
+        height: 120%;
     }
 }
 
@@ -307,7 +320,7 @@ body {
 @media (min-width: 1025px) and (max-width: 1369px) {
     .main-wrapper {
         background-color: black;
-        font-size: 15px;
+        font-size: 16.5px;
     }
     /* popup main */
     .popup-main {
