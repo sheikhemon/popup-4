@@ -191,7 +191,7 @@ body {
 @media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
     .popup-main {
         font-size: 8px;
-        height: 42vh;
+        height: 44vh;
     }
 
     .popup-content {
