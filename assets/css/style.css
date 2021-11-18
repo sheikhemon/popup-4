@@ -11,7 +11,6 @@ body {
 
 .main-wrapper {
     background-color: #000000;
-    font-size: 18.5px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -23,8 +22,9 @@ body {
 .popup-main {
     background-color: #ffffff;
     position: relative;
+    font-size: 20px;
     width: 32em;
-    height: 70vh;
+    height: 62vh;
     background-image: url("../img/main-bg.png");
     background-position: center;
     background-size: cover;
@@ -49,7 +49,7 @@ body {
 }
 
 .popup-left img {
-    height: 61.5vh;
+    height: 55vh;
 }
 
 /* Popup Right */
@@ -60,7 +60,7 @@ body {
     align-items: center;
     padding-top: .4em;
     padding-left: 5em;
-    padding-bottom: 6.4em;
+    padding-bottom: 7.5em;
 }
 
 .popup-content .count-popup .single-time {
@@ -98,7 +98,7 @@ body {
     font-weight: 700;
     font-size: 2em;
     line-height: 1.1em;
-    padding-left: .9em;
+    padding-left: 1.2em;
     padding-bottom: .2em;
     transition: all .2s linear;
 }
@@ -186,297 +186,65 @@ body {
     cursor: pointer;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 410px) {
-    .main-wrapper {
-        font-size: 5.5px !important;
-    }
-    .popup-content img {
-        margin-left: 7.5em !important;
-        height: 150px !important;
-    }
-    .link-area .jomphaa-btn::before {
-        top: -1.2px !important;
-        left: -1.5px !important;
-    }
-}
 
-/* Media Query for Mobile Devices */
-
-@media screen and (max-width: 667px) {
+/* For 640 Resolution */
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
     .main-wrapper {
-        font-size: 7.2px;
-        background-color: black;
+        font-size: 10px;
+        width: 100%;
     }
+
     .popup-main {
-        background-color: #ffffff;
-        position: relative;
-        width: 32em;
-        height: 42vh;
+        width: 20em;
     }
+
     .popup-content {
         flex-direction: column;
     }
+
     .popup-content img {
-        text-align: center;
-        margin-left: 9.8em;
-        margin-top: 1em;
-        height: 160px;
+        margin-left: 5em;
+        width: 6em;
+        height: 9em;
     }
+
     .popup-content .count-popup {
         padding-top: 1em;
         padding-left: 0em;
         padding-bottom: 1em;
     }
-    .popup-right .popup-text h1 {
-        width: 100%;
-        text-align: center;
-        font-size: 2.4em;
-        line-height: 1.2em;
-        padding-left: 0em;
-    }
-    .popup-right .popup-text p {
-        text-align: center;
-        font-size: .9em;
-        padding-left: 0em;
-        padding-bottom: 2em;
-    }
-    .link-area {
-        text-align: center;
-        padding-left: 0em;
-    }
-    .link-area .jomphaa-btn::before {
-        content: '';
-        position: absolute;
-        top: -1.65px;
-        left: -1.6px;
-        border: .21em dashed #7094F6;
-        opacity: .5;
-        width: 104%;
-        height: 120%;
+}
+
+/* For 1024 Resolution */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .popup-main {
+        font-size: 22px;
     }
 }
 
-/* Media Query for low resolution  Tablets, Ipads */
-
-/* Media Query for Tablets Ipads portrait mode */
-
-@media (min-width: 767px) and (max-width: 1024px) {
-    .main-wrapper {
-        font-size: 16px;
-        background-color: black;
-    }
+/* For 1366 Resolution */
+@media only screen and (min-width: 1030px) and (max-width: 1366px) {
     .popup-main {
-        background-color: #ffffff;
-        position: relative;
-        width: 32em;
-        height: 70vh;
-    }
-    .popup-content {
-        flex-direction: column;
-    }
-    .popup-content img {
-        text-align: center;
-        margin-top: 3em;
-        margin-left: 8em;
-        height: 30vh;
-        width: 20vh;
-    }
-    .popup-content .count-popup {
-        padding-top: 2em;
-        padding-left: 0em;
-        padding-bottom: 2em;
-    }
-    .popup-right .popup-text h1 {
-        width: 100%;
-        text-align: center;
-        font-size: 2.4em;
-        line-height: 1.2em;
-        padding-left: 0em;
-    }
-    .popup-right .popup-text p {
-        text-align: center;
-        font-size: .9em;
-        padding-left: 0em;
-        padding-bottom: 2.5em;
-    }
-    .link-area {
-        text-align: center;
-        padding-left: 0em;
-    }
-    .link-area .jomphaa-btn::before {
-        content: '';
-        position: absolute;
-        top: -3.7px;
-        left: -4.6px;
-        border: .21em dashed #7094F6;
-        opacity: .5;
-        width: 104%;
-        height: 110%;
+        font-size: 22px;
     }
 }
 
-/* Media Query for Laptops and Desktops */
-
-@media (min-width: 1025px) and (max-width: 1369px) {
-    .main-wrapper {
-        background-color: black;
-        font-size: 16.5px;
-    }
-    /* popup main */
+@media only screen and (min-width: 1370px) and (max-width: 1605px) {
     .popup-main {
-        background-color: #ffffff;
-        position: relative;
-    }
-    /* Popup Content */
-    .popup-left img {
-        height: 62.5vh;
-    }
-    /* Popup Right */
-    .popup-content .count-popup {
-        padding-top: .4em;
-        padding-left: 5em;
-        padding-bottom: 6em;
-    }
-    .popup-content .count-popup .single-time {
-        margin-right: .6em;
-    }
-    .popup-content .count-popup .single-time:last-child {
-        margin-right: 0em;
-    }
-    .link-area .jomphaa-btn::before {
-        content: '';
-        position: absolute;
-        top: -3px;
-        left: -4px;
-        border: .21em dashed #7094F6;
-        opacity: .5;
-        width: 104%;
-        height: 110%;
+        font-size: 22px;
     }
 }
 
-/* Media Query for Large screens */
-
-/* @media (min-width: 1400px) and (max-width: 2400px) {
-    .main-wrapper {
-        background-color: #000000;
-        font-size: 25.5px;
-        height: 100vh;
-    }
+/* If you're looking to supply different graphics or choose different typography for the lower resolution iPad display, the media queries below will work. */
+/* Orientation : Landscape */
+@media only screen and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1) and (min-device-width : 768px) and (max-device-width : 1007px) {
     .popup-main {
-        position: relative;
-        width: 32em;
-        height: 73vh;
-        background-color: #ffffff;
-        background-image: url("../img/main-bg.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        font-size: 20px;
     }
-    .popup-content-main {
-        background-image: url("../img/popup-light.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 30vh;
+}
+
+@media only screen and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1) and (min-device-width : 768px) and (max-device-width : 1007px) {
+    .popup-main {
+        font-size: 21px;
     }
-    .popup-content {
-        display: flex;
-        padding: 1.8em 1.5em;
-    }
-    .popup-left img {
-        height: 64.7vh;
-    }
-    .popup-content .count-popup {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: .4em;
-        padding-left: 5em;
-        padding-bottom: 6em;
-    }
-    .popup-content .count-popup .single-time {
-        margin-right: .7em;
-    }
-    .popup-content .count-popup .single-time:last-child {
-        margin-right: 0em;
-    }
-    .popup-content .count-popup .single-time span {
-        background-color: #F4F4F4;
-        color: #979797;
-        font-size: 1.23em;
-        font-weight: 400;
-        line-height: 1em;
-        padding: 0 .2em;
-        margin-right: .05em;
-    }
-    .popup-content .popup-right .count-popup .single-time p {
-        text-align: center;
-        color: #000000;
-        font-size: .4em;
-        font-weight: 600;
-        line-height: 1.5em;
-        padding-top: .5em;
-    }
-    .popup-right .popup-text h1 {
-        width: 2.9em;
-        color: #BCBAD0;
-        font-weight: 700;
-        font-size: 2.4em;
-        line-height: 1.1em;
-        padding-left: .9em;
-        padding-bottom: .2em;
-        transition: all .2s linear;
-    }
-    .popup-right .popup-text h1:hover {
-        color: #4F80FF;
-    }
-    .popup-right .popup-text span {
-        color: #000000;
-    }
-    .popup-right .popup-text p {
-        color: #848484;
-        font-weight: 400;
-        font-size: .6em;
-        line-height: 1em;
-        padding-left: 4em;
-        padding-bottom: 3.6em;
-        transition: all .2s linear;
-    }
-    .popup-right .popup-text p:hover {
-        color: #4F80FF;
-    }
-    .link-area {
-        padding-left: 2.5em;
-    }
-    .link-area .jomphaa-btn, .shop-btn {
-        text-decoration: none;
-        padding: .8em 1.5em;
-        letter-spacing: .12em;
-        font-size: .55em;
-        line-height: 1.273em;
-    }
-    .jomphaa-btn {
-        background: rgb(114, 102, 185);
-        background: linear-gradient(to right, #2EF2F2 0%, #28D2FD 80%);
-        color: #000000;
-        font-weight: 600;
-        margin-right: 0.7em;
-        position: relative;
-    }
-    .shop-btn {
-        background-color: #E3E5F2;
-        color: #000000;
-        font-weight: 700;
-    }
-    .link-area .jomphaa-btn::before {
-        content: '';
-        position: absolute;
-        top: -4.8px;
-        left: -6.3px;
-        border: .21em dashed #7094F6;
-        opacity: .5;
-        width: 104%;
-        height: 110%;
-    }
-} */
+}
