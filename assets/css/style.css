@@ -187,42 +187,46 @@ body {
 }
 
 
-/* For 640 Resolution */
-@media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
+/* Media Query for Mobile Devices */
+
+@media screen and (max-width: 360px) {
     .popup-main {
-        font-size: 8px;
-        height: 44vh;
+        font-size: 10px;
     }
 
     .popup-content {
         flex-direction: column;
     }
 
-    .popup-content img {
-        margin-left: 9.4em;
-        margin-top: 2.5em;
-        width: 10em;
-        height: 15em;
+    .popup-content-main {
+        height: 35vh;
     }
 
     .popup-content .count-popup {
         padding-top: 2em;
         padding-left: 0em;
-        padding-bottom: 2em;
+        padding-bottom: 6em;
     }
 
-    .popup-right .popup-text p {
+    .popup-content img {
+        /* display: none; */
+        margin-left: 11em;
+        margin-top: 0em;
+        width: 6.5em;
+        height: 10em;
+    }
+
+    .popup-right .popup-text h1 {
+        width: 100%;
         text-align: center;
         padding-left: 0em;
     }
 
-    .popup-right .popup-text h1 {
-        width: 13em;
+    .popup-right .popup-text p {
         text-align: center;
-    }
-
-    .popup-right .popup-text {
-        display: inline;
+        margin-top: .5em;
+        font-size: 1em;
+        padding-left: 0em;
     }
 
     .link-area {
@@ -231,41 +235,249 @@ body {
     }
 
     .link-area .jomphaa-btn::before {
-        top: -1.5px;
+        top: -2px;
         left: -2px;
     }
 }
 
-/* For 1024 Resolution */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media (min-width: 361px) and (max-width: 375px) {
     .popup-main {
-        font-size: 22px;
+        font-size: 10px;
+        height: 64vh;
+    }
+
+    .popup-content {
+        flex-direction: column;
+    }
+
+    .popup-content-main {
+        height: 37vh;
+    }
+
+    .popup-content .count-popup {
+        padding-top: 2em;
+        padding-left: 0em;
+        padding-bottom: 13em;
+    }
+
+    .popup-content img {
+        /* display: none; */
+        margin-left: 11em;
+        margin-top: 0em;
+        width: 6.5em;
+        height: 10em;
+    }
+
+    .popup-right .popup-text h1 {
+        width: 100%;
+        text-align: center;
+        padding-left: 0em;
+    }
+
+    .popup-right .popup-text p {
+        padding-bottom: 2.5em;
+        text-align: center;
+        margin-top: .5em;
+        font-size: 1em;
+        padding-left: 0em;
+    }
+
+    .link-area {
+        text-align: center;
+        padding-left: 0em;
+    }
+
+    .link-area .jomphaa-btn::before {
+        top: -2px;
+        left: -2px;
     }
 }
 
-/* For 1366 Resolution */
-@media only screen and (min-width: 1030px) and (max-width: 1366px) {
+@media (min-width: 410px) and (max-width: 441px) {
     .popup-main {
-        font-size: 22px;
+        font-size: 11px;
+        height: 56vh;
+    }
+
+    .popup-content {
+        flex-direction: column;
+    }
+
+    .popup-content-main {
+        height: 35vh;
+    }
+
+    .popup-content .count-popup {
+        padding-top: 2em;
+        padding-left: 0em;
+        padding-bottom: 8.5em;
+    }
+
+    .popup-content img {
+        /* display: none; */
+        margin-left: 11em;
+        margin-top: 0em;
+        width: 6.5em;
+        height: 10em;
+    }
+
+    .popup-right .popup-text h1 {
+        width: 100%;
+        text-align: center;
+        padding-left: 0em;
+    }
+
+    .popup-right .popup-text p {
+        padding-bottom: 2em;
+        text-align: center;
+        margin-top: .5em;
+        font-size: 1em;
+        padding-left: 0em;
+    }
+
+    .link-area {
+        text-align: center;
+        padding-left: 0em;
+    }
+
+    .link-area .jomphaa-btn::before {
+        top: -2px;
+        left: -2.6px;
     }
 }
 
-@media only screen and (min-width: 1370px) and (max-width: 1605px) {
+/* Media Query for Tablets Ipads portrait mode */
+
+@media (min-width: 442px) and (max-width: 768px) {
     .popup-main {
-        font-size: 22px;
+        font-size: 15px;
+        height: 56vh;
+    }
+
+    .popup-content {
+        flex-direction: column;
+    }
+
+    .popup-content-main {
+        height: 35vh;
+    }
+
+    .popup-content .count-popup {
+        padding-top: 2em;
+        padding-left: 0em;
+        padding-bottom: 7em;
+    }
+
+    .popup-content img {
+        /* display: none; */
+        margin-left: 11em;
+        margin-top: 0em;
+        width: 6.5em;
+        height: 10em;
+    }
+
+    .popup-right .popup-text h1 {
+        width: 100%;
+        text-align: center;
+        padding-left: 0em;
+    }
+
+    .popup-right .popup-text p {
+        text-align: center;
+        margin-top: .5em;
+        font-size: 1em;
+        padding-left: 0em;
+    }
+
+    .link-area {
+        text-align: center;
+        padding-left: 0em;
+    }
+
+    .link-area .jomphaa-btn::before {
+        top: -3px;
+        left: -3.5px;
     }
 }
 
-/* If you're looking to supply different graphics or choose different typography for the lower resolution iPad display, the media queries below will work. */
-/* Orientation : Landscape */
-@media only screen and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1) and (min-device-width : 768px) and (max-device-width : 1007px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .popup-main {
         font-size: 20px;
+        height: 56vh;
+    }
+
+    .popup-content {
+        flex-direction: column;
+    }
+
+    .popup-content-main {
+        height: 35vh;
+    }
+
+    .popup-content .count-popup {
+        padding-top: 2em;
+        padding-left: 0em;
+        padding-bottom: 7em;
+    }
+
+    .popup-content img {
+        /* display: none; */
+        margin-left: 11em;
+        margin-top: 0em;
+        width: 6.5em;
+        height: 10em;
+    }
+
+    .popup-right .popup-text h1 {
+        width: 100%;
+        text-align: center;
+        padding-left: 0em;
+    }
+
+    .popup-right .popup-text p {
+        text-align: center;
+        margin-top: .5em;
+        font-size: 1em;
+        padding-left: 0em;
+    }
+
+    .link-area {
+        text-align: center;
+        padding-left: 0em;
+    }
+
+    .link-area .jomphaa-btn::before {
+        top: -3.5px;
+        left: -5px;
+    }
+
+}
+
+/* Media Query for Laptops and Desktops */
+
+@media (min-width: 1025px) and (max-width: 1168px) {
+    .popup-main {
+        font-size: 14px;
+    }
+
+    .link-area .jomphaa-btn::before {
+        top: -2.7px;
+        left: -3.7px;
     }
 }
 
-@media only screen and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1) and (min-device-width : 768px) and (max-device-width : 1007px) {
+/* Media Query for Large screens */
+
+@media (min-width: 1169px) and (max-width: 1369px) {
     .popup-main {
-        font-size: 21px;
+        font-size: 22px;
+    }
+}
+
+/* Media Query for Large screens */
+
+@media (min-width: 1370px) and (max-width: 1920px) {
+    .popup-main {
+        font-size: 22px;
     }
 }
