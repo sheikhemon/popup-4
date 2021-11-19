@@ -473,11 +473,3 @@ body {
         font-size: 22px;
     }
 }
-
-/* Media Query for Large screens */
-
-@media (min-width: 1370px) and (max-width: 1920px) {
-    .popup-main {
-        font-size: 22px;
-    }
-}
